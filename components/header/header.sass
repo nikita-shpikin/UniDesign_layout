@@ -1,0 +1,29 @@
+.header
+	background: $colorBackgroundHeader
+
+	&-container
+		padding: 45px 80px
+
+		display: flex
+		justify-content: space-between
+
+	&__logo
+		font-weight: 700
+		font-size: 48px
+		line-height: 72px
+		color: $colorLogo
+		mix-blend-mode: darken
+
+	&__menu
+		margin-right: 50px
+
+		display: flex
+		align-items: center
+		gap: 80px
+
+	&__item
+		color: $colorMenu
+
+		&:hover
+			border-bottom: 3px solid $colorLogo
+			transition: border-bottom .2s ease-in-out .2s	
