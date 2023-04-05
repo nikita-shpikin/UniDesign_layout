@@ -1,4 +1,8 @@
-include ./components/head
-include ./components/header/header
-main
-	include ./components/designer/designer
+extends ./components/head
+include ./components/header/header.pug
+
+block content 
+	
+	- headerArr = ['About Me', 'Projects', 'Contacts', 'Hire Me']
+	
+	+header('UniDesign', headerArr)

@@ -1,29 +1,67 @@
 .header
-	background: $colorBackgroundHeader
+	background-color: $colorBackgroundHeader
 
-	&-container
-		padding: 45px 80px
+	&__container
+		padding: 2vw
 
-		display: flex
-		justify-content: space-between
+		display: grid
+		grid-template-columns: 1fr 3fr
+		place-items: center center
 
-	&__logo
+	&__title
 		font-weight: 700
-		font-size: 48px
+		font-size: clamp(20px, 5vw, 48px)
 		line-height: 72px
 		color: $colorLogo
-		mix-blend-mode: darken
+
+	&__nav
+		width: 100%
 
 	&__menu
-		margin-right: 50px
-
 		display: flex
+		justify-content: space-evenly
 		align-items: center
-		gap: 80px
 
 	&__item
+		font-weight: 400
+		font-size: 30px
+		line-height: 45px
 		color: $colorMenu
+		position: relative
 
-		&:hover
-			border-bottom: 3px solid $colorLogo
-			transition: border-bottom .2s ease-in-out .2s	
+		&::after			
+			content: ''
+			position: absolute
+			display: block
+			height: 4px
+			width: 40%	
+
+		&:hover::after
+			background-color: $colorLogo
+			border-radius: 50px
+
+	&__burger
+		display: none
+		height: 30px
+		width: calc( 10% + 10px )
+
+		position: relative
+		cursor: pointer
+
+		&::before, &::after
+			content: ''
+			position: absolute
+
+			display: block
+			width: 100%
+			height: 4px
+
+			transition: 1s linear
+			background-color: $colorLogo
+
+		&::before
+			transform: translateY(10px) rotate(0deg)			
+		&::after
+			transform: translateY(20px) rotate(0deg)
+
+@import ./header-media
