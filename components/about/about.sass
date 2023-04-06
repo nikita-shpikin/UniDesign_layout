@@ -2,49 +2,24 @@
 	background-color: $colorBackgroundAbout
 
 	&__container
-		display: grid
-		grid-template-columns: 40% 60%
+		padding: 206px 46px
+		background: url('../../components/about/man.png') no-repeat right bottom
 
-	&__content
-		padding: 205px 45px
+		display: grid
+		grid-template-columns: 415px
 
 	&__title
-		font-weight: 700
-		font-size: 48px
-		line-height: 72px
-		letter-spacing: 0.35em
-		color: $colorTitle
+		@include title(48px, 72px, 0.35)
 
 	&__text
-		margin-top: 15px
-		width: 415px
+		margin-top: 30px
 
-		font-weight: 400
-		font-size: 24px
-		line-height: 36px
-		color: $colorText
+		@extend %text
 
 	&__button
-		margin: 30px 0 0 30px
-		padding: 20px 0 20px 0
-		cursor: pointer
-		width: clamp(200px, 18vw, 246px)
+		margin-top: 30px
+		margin-left: 30px
 
-		background: inherit
-		border: 2px solid $colorTitle
-		box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25)
-		border-radius: 10px
+		@extend %button
 
-		text-align: center
-		font-weight: 400
-		font-size: 24px
-		line-height: 36px
-		color: $colorTitle
-
-		&:hover
-			transition: background 1s ease-out
-			background: $colorTitle
-			color: $colorHoverText
-
-	&__image
-		background: url('../../components/about/man glasses.png') center no-repeat
+@import ./about-media

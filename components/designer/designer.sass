@@ -25,10 +25,7 @@
 	&__text
 		margin-top: 20px
 
-		font-weight: 400
-		font-size: clamp(16px, 4vw, 24px)
-		line-height: 36px
-		color: $colorText
+		@extend %text
 
 	&__buttons
 		margin-top: 90px
@@ -38,10 +35,6 @@
 
 	&__button
 		@extend %button
-
-		&:focus, &:hover
-			background: $colorTitle			
-			color: $colorHoverText
 
 	&__photo
 		filter: drop-shadow(36px -32px 0px $colorDropShadow)

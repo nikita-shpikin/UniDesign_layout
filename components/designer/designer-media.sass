@@ -16,6 +16,7 @@
 			gap: 20px
 
 		&__photo
+			filter: drop-shadow(20px -20px 2px $colorDropShadow)
 			align-self: center
 			order: -1
 
@@ -27,6 +28,9 @@
 		&__content
 			display: grid
 			align-items: center
+
+		&__photo
+			filter: drop-shadow(10px -10px 2px $colorDropShadow)
 
 @media screen and (max-width: $breakpoint-sm)
 	.designer
@@ -40,5 +44,3 @@
 			max-width: 300px
 			justify-self: center
 
-		&__photo
-			filter: drop-shadow(10px -10px 2px $colorDropShadow)

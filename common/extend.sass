@@ -13,7 +13,17 @@
 	line-height: 36px
 	color: $colorTitle
 	transition: .6s .2s
+
+	&:focus, &:hover
+		background: $colorTitle			
+		color: $colorHoverText
 	
 %title
 	font-weight: 700
 	color: $colorTitle
+
+%text
+	font-weight: 400
+	font-size: clamp(16px, 3vw, 24px)
+	line-height: 36px
+	color: $colorText

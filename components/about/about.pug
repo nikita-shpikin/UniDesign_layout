@@ -1,8 +1,6 @@
-section.about 
-	.container.about__container
-		.about__content
-			h2.about__title About Me
-			p.about__text Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has . 
-			button.about__button Hire Me
-		.about__image
-			//- img(src="../../components/about/man glasses.png", alt="man wearing virtual reality glasses")
+mixin about(title, text, button)
+	section.about
+		.container.about__container 
+			h2.about__title #{title}
+			p.about__text #{text}
+			button.about__button #{button}	
