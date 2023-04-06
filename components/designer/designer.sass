@@ -16,11 +16,8 @@
 
 	&__title
 		margin-top: 5px
-	
-		font-weight: 700
-		font-size: clamp(30px, 5vw, 48px)
-		line-height: clamp(50px, 7vw, 72px)
-		color: $colorTitle
+
+		@include title(48px, 72px, 0)
 
 		&_highlight
 			color: $colorTitleHighlight
@@ -40,31 +37,14 @@
 		justify-content: space-between
 
 	&__button
-		width: clamp(150px, 15vw, 246px)
-		height: 72px
-		cursor: pointer
+		@extend %button
 
-		border: 2px solid $colorTitle
-		box-shadow: 11px 21px 15px 6px rgba(0, 0, 0, 0.25)
-		border-radius: 10px
-
-		text-align: center
-		font-weight: 400
-		font-size: 24px
-		line-height: 36px
-		color: $colorTitle
-		transition: .6s .2s
-
-		&:focus
-			background: $colorTitle			
-			color: $colorHoverText			
-
-		&:hover
+		&:focus, &:hover
 			background: $colorTitle			
 			color: $colorHoverText
 
 	&__photo
-		filter: drop-shadow(36px -32px 0px rgba(135, 117, 249, 0.5))
+		filter: drop-shadow(36px -32px 0px $colorDropShadow)
 		border-radius: 0px 0px 0px 191px
 
 @import ./designer-media

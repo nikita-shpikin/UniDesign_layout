@@ -1,0 +1,6 @@
+@mixin title($size, $height, $spacing)
+	@extend %title
+
+	font-size: clamp(30px, 5vw, $size)
+	line-height: clamp(50px, 7vw, $height)
+	letter-spacing: $spacing + em
