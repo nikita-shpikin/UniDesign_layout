@@ -6,18 +6,20 @@
 			grid-template-columns: 1fr 1fr
 
 		&__nav
-			display: block
+			display: none
 			width: 210px
-			height: 230px
+			height: 235px
 			background-color: $colorBackgroundHeader
 			border-radius: 0px 0px 0px 191px
+			border: 1px solid $colorLogo
 
 			overflow: hidden
 			position: absolute
+			z-index: 1
 			top: 100%
 			right: 0
 
-			transition: .3s .3s		
+			transition: .3s .1s		
 			transform: translateX(100%)
 
 			&_active
@@ -38,11 +40,11 @@
 			&_active
 				&::before
 					transform: translateY(15px)	 rotate(-45deg)
-					transition: 0.55s 0.5s						
+					transition: 0.55s 0.6s						
 
 				&::after
 					transform: translateY(15px)	 rotate(45deg)
-					transition: 1.55s 0.3s
+					transition: 1.55s 0.2s
 			
 			&:hover::after
 				transform: translateY(20px) rotate(90deg)

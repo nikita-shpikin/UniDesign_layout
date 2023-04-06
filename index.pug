@@ -1,8 +1,12 @@
 extends ./components/head
 include ./components/header/header.pug
+include ./components/designer/designer.pug
 
 block content 
 	
 	- headerArr = ['About Me', 'Projects', 'Contacts', 'Hire Me']
-	
 	+header('UniDesign', headerArr)
+	
+	main 
+		+designer()
+

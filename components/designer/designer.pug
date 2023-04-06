@@ -1,12 +1,12 @@
-section.designer
-	.container.designer-container
-		.designer__content
-			h3.designer__subtitle Welcome To My PortFolio
-			h2.designer__title Hi , I am Steven UI/UX  
-				span.designer__title_highlight Designer
-			p.designer__text Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et, plateo erat est sed turpis hoc equit	
-			.designer__buttons 
-				button.designer__button Hire Me
-				button.designer__button My Project
-		.designer__image
-			img.designer__photo(src="../../components/designer/steven.png", alt="Photo Steven")
+mixin designer(name = 'Steven')
+	section.designer 
+		.container.designer__container 
+			.designer__content
+				h3.designer__subtitle Welcome To My PortFolio
+				h2.designer__title Hi , I am #{name} UI/UX 
+					span.designer__title_highlight designer 
+				p.designer__text Lorem Ipsum dolar sit amet, consectetur adipicsing elit. Locus odio et, plateo erat est sed turpis hoc equit
+				.designer__buttons
+					button.designer__button Hire Me
+					button.designer__button My Project		
+			img.designer__photo(src="../../components/designer/steven.png", alt=`photo ${name}`)

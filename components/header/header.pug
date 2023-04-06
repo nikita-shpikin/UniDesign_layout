@@ -1,12 +1,13 @@
 mixin header(title = 'UniDesign', arr = [1, 2, 3])
 	header.header 
 		.container.header__container 
-			h1.header__title #{title}
+			a(href="#") 
+				h1.header__title #{title}
 			nav.header__nav  
 				menu.header__menu 
 					each value in arr 
 						li.header__item
-							a(href="#") #{value} 
+							a.header__link(href="#") #{value} 
 			.header__burger 
 
 	script(src='../../components/header/header.js') 

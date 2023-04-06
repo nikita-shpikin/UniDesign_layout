@@ -1,0 +1,41 @@
+@media screen and (max-width: $breakpoint-xl)
+	.designer
+		&__container
+				padding: 8.8vw 3.7vw
+		
+		&__buttons
+			margin-top: 5vw		
+
+@media screen and (max-width: $breakpoint-lg)
+	.designer
+		&__container
+				grid-template-columns: 1fr 2fr
+
+		&__buttons
+			max-width: 350px
+			gap: 20px
+
+		&__photo
+			align-self: center
+			order: -1
+
+@media screen and (max-width: $breakpoint-md)
+	.designer
+		&__container
+			grid-template-columns: 1fr
+
+		&__content
+			display: grid
+			align-items: center
+
+@media screen and (max-width: $breakpoint-sm)
+	.designer
+		&__container
+			padding: 9.8vw 2vw
+
+		&__title, &__text, &__subtitle 
+			text-align: center
+
+		&__buttons
+			max-width: 300px
+			justify-self: center
