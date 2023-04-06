@@ -1,0 +1,16 @@
+mixin project(title, text, arr) 
+	.block
+	section.project
+		.container.project__container 
+			h2.project__title #{title}
+			p.project__text #{text}
+			ul.project__list
+				each item in arr 
+					li.project__list-item 
+						a.project__list-link(href="#")
+							if(item === 'car')
+								img.project__list-image(src="../../components/project/car.png", alt="car") 
+							if(item === 'girl')
+								img.project__list-image(src="../../components/project/girl.png", alt="girl") 							
+							if(item === 'black')
+								img.project__list-image(src="../../components/project/black.png", alt="black")

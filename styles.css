@@ -158,12 +158,12 @@ meter {
   color: #fff;
 }
 
-.about__title, .designer__title {
+.project__title, .about__title, .designer__title {
   font-weight: 700;
   color: #2000E7;
 }
 
-.about__text, .designer__text {
+.project__text, .about__text, .designer__text {
   font-weight: 400;
   font-size: clamp(16px, 3vw, 24px);
   line-height: 36px;
@@ -178,6 +178,10 @@ body * {
 .container {
   max-width: 1440px;
   margin: 0 auto;
+}
+
+.block {
+  height: clamp(150px, 20vw, 300px);
 }
 
 .header {
@@ -428,6 +432,67 @@ body * {
     margin: auto;
     margin-top: 30px;
     width: 70%;
+  }
+}
+.project {
+  background-color: #ebe1ea;
+}
+.project__container {
+  padding: 35px 108px;
+}
+.project__title {
+  font-size: clamp(30px, 5vw, 48px);
+  line-height: clamp(50px, 7vw, 72px);
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+.project__text {
+  text-align: center;
+}
+.project__list {
+  margin-top: 45px;
+  margin-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  row-gap: clamp(23px, 6vw, 46px);
+  column-gap: clamp(60px, 5vw, 186px);
+}
+.project__list-item {
+  justify-self: center;
+}
+
+@media screen and (max-width: 992px) {
+  .project__container {
+    padding: 1vw;
+  }
+}
+@media screen and (max-width: 576px) {
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
+  }
+  li:nth-child(odd) {
+    display: none;
   }
 }
 

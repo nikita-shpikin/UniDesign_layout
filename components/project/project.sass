@@ -1,0 +1,28 @@
+.project
+	background-color: $colorBackgroundProject
+
+	&__container
+		padding: 35px 108px
+
+	&__title
+		@include title(48px, 72px, .2)
+		text-align: center
+	
+	&__text
+		@extend %text
+		text-align: center
+
+	&__list
+		margin-top: 45px
+		margin-bottom: 30px
+
+		display: grid
+		grid-template-columns: repeat(auto-fit, minmax(255px, 1fr))
+		row-gap: clamp(23px, 6vw, 46px)
+		column-gap: clamp(60px, 5vw, 186px)
+
+	&__list-item
+		justify-self: center
+
+
+@import ./project-media

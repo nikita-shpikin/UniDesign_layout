@@ -1,0 +1,10 @@
+@media screen and (max-width: $breakpoint-lg)
+	.project
+		&__container
+			padding: 1vw
+
+@media screen and (max-width: $breakpoint-sm)
+	@for $item from 1 through 9
+		li:nth-child(odd)
+			display: none
+			
