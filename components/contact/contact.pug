@@ -1,0 +1,15 @@
+mixin contact(title, text)
+	.contact-block
+
+	section.contact
+		.container.contact__container 
+
+			h2.contact__title #{title}
+			p.contact__text #{text}
+
+			.contact__content
+				form.form(action="#" method='get')
+					input.form__input(type="text" placeholder='Email')
+					input.form__input(type="text" placeholder='Password')
+					textarea.form__area(name="", rows="4" col='4', placeholder="Message..")
+					button.form__button Contact

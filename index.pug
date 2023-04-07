@@ -3,6 +3,7 @@ include ./components/header/header.pug
 include ./components/designer/designer.pug
 include ./components/about/about.pug
 include ./components/project/project.pug
+include ./components/contact/contact.pug
 
 block content 
 	
@@ -19,3 +20,6 @@ block content
 		-	projectText = 'Lorem Ipsum is simply dummy text of the printing'
 		- projectArr = ['car', 'car','car', 'girl', 'girl', 'girl', 'black', 'black', 'black']
 		+project('My Projects', projectText, projectArr)
+
+		- contactText = 'Lorem Ipsum is simply dummy text of the printing'
+		+contact('Contact Me', contactText)

@@ -158,12 +158,12 @@ meter {
   color: #fff;
 }
 
-.project__title, .about__title, .designer__title {
+.contact__title, .project__title, .about__title, .designer__title {
   font-weight: 700;
   color: #2000E7;
 }
 
-.project__text, .about__text, .designer__text {
+.contact__text, .project__text, .about__text, .designer__text {
   font-weight: 400;
   font-size: clamp(16px, 3vw, 24px);
   line-height: 36px;
@@ -180,8 +180,39 @@ body * {
   margin: 0 auto;
 }
 
-.block {
-  height: clamp(150px, 20vw, 300px);
+.form {
+  display: grid;
+  grid-template-columns: minmax(100%, 50%);
+}
+.form__input, .form__area, .form__button {
+  margin-top: clamp(41px, 12vw, 81px);
+  background: #fff;
+  box-shadow: 13px 21px 4px rgba(0, 0, 0, 0.25);
+  color: #383838;
+  font-size: clamp(16px, 5vw, 32px);
+  font-weight: 400;
+  line-height: 48px;
+}
+.form__input, .form__area {
+  padding: 30px 55px;
+}
+.form__button {
+  margin-top: 50px;
+  justify-self: center;
+  height: clamp(50px, 7vw, 94px);
+  width: clamp(200px, 24vw, 327px);
+  cursor: pointer;
+  text-align: center;
+  transition: 1s;
+}
+.form__button:hover, .form__button:focus {
+  background-color: rgba(0, 0, 0, 0.25);
+  color: #fff;
+  box-shadow: 13px 21px 4px rgba(0, 0, 0, 0.75);
+}
+
+.form__input, .form__area {
+  padding: 3vw 4vw;
 }
 
 .header {
@@ -331,7 +362,7 @@ body * {
 }
 .designer__title {
   margin-top: 5px;
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(30px, 6vw, 48px);
   line-height: clamp(50px, 7vw, 72px);
   letter-spacing: 0em;
 }
@@ -402,12 +433,12 @@ body * {
 }
 .about__container {
   padding: 206px 46px;
-  background: url("../../components/about/man.png") no-repeat right bottom;
+  background: url("../../components/about/man.png") no-repeat right bottom/65%;
   display: grid;
   grid-template-columns: 415px;
 }
 .about__title {
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(30px, 6vw, 48px);
   line-height: clamp(50px, 7vw, 72px);
   letter-spacing: 0.35em;
 }
@@ -434,14 +465,18 @@ body * {
     width: 70%;
   }
 }
+.project-block {
+  height: clamp(150px, 20vw, 300px);
+}
+
 .project {
-  background-color: #ebe1ea;
+  background-color: #fff7ea;
 }
 .project__container {
   padding: 35px 108px;
 }
 .project__title {
-  font-size: clamp(30px, 5vw, 48px);
+  font-size: clamp(30px, 6vw, 48px);
   line-height: clamp(50px, 7vw, 72px);
   letter-spacing: 0.2em;
   text-align: center;
@@ -493,6 +528,51 @@ body * {
   }
   li:nth-child(odd) {
     display: none;
+  }
+}
+.contact-block {
+  height: clamp(120px, 20vw, 270px);
+}
+
+.contact {
+  background-color: #f4fbff;
+}
+.contact__container {
+  padding: 67px 0 190px 0;
+}
+.contact__title {
+  margin-top: 67px;
+  font-size: clamp(30px, 6vw, 48px);
+  line-height: clamp(50px, 7vw, 72px);
+  letter-spacing: 0.2em;
+  text-align: center;
+}
+.contact__text {
+  margin-top: 10px;
+  text-align: center;
+}
+.contact__content {
+  margin-top: 160px;
+  padding-left: 66px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  background: url("../../components/contact/programmer.png") no-repeat right center/55%;
+}
+
+@media screen and (max-width: 1200px) {
+  .contact__content {
+    margin-top: 6vw;
+    padding-left: 3vw;
+  }
+}
+@media screen and (max-width: 768px) {
+  .contact__container {
+    padding-bottom: 67px;
+  }
+  .contact__content {
+    padding: 3vw;
+    grid-template-columns: 1fr;
+    background: none;
   }
 }
 

@@ -1,0 +1,30 @@
+.contact-block
+	@include block(270px)
+	
+.contact
+	background-color: $colorBackgroundContact
+
+	&__container
+		padding: 67px 0 190px 0
+
+	&__title
+		margin-top: 67px
+
+		@include title(48px, 72px, .2)
+		text-align: center
+	
+	&__text
+		margin-top: 10px
+
+		@extend %text
+		text-align: center
+
+	&__content
+		margin-top: 160px
+		padding-left: 66px
+
+		display: grid
+		grid-template-columns: 50% 50%
+		background: url('../../components/contact/programmer.png') no-repeat right center / 55%
+
+@import ./contact-media
