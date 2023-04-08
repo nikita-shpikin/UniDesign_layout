@@ -196,6 +196,10 @@ body * {
 .form__input, .form__area {
   padding: 30px 55px;
 }
+.form__area {
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
 .form__button {
   margin-top: 50px;
   justify-self: center;
@@ -211,10 +215,11 @@ body * {
   box-shadow: 13px 21px 4px rgba(0, 0, 0, 0.75);
 }
 
-.form__input, .form__area {
-  padding: 3vw 4vw;
+@media screen and (max-width: 576px) {
+  .form__input, .form__area {
+    padding: 3vw 4vw;
+  }
 }
-
 .header {
   background-color: #ebe9fd;
 }

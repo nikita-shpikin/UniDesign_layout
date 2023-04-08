@@ -11,5 +11,5 @@ mixin contact(title, text)
 				form.form(action="#" method='get')
 					input.form__input(type="text" placeholder='Email')
 					input.form__input(type="text" placeholder='Password')
-					textarea.form__area(name="", rows="4" col='4', placeholder="Message..")
+					textarea.form__area(name="text", rows="5" col='33', placeholder="Message..", maxlength = "130", wrap='on')
 					button.form__button Contact

@@ -25,6 +25,10 @@ body *
 	&__input, &__area
 		padding: 30px 55px		
 
+	&__area
+		white-space: pre-wrap
+		overflow-wrap: break-word
+
 	&__button
 		margin-top: 50px
 		justify-self: center
@@ -41,7 +45,7 @@ body *
 			color: $colorHoverText
 			box-shadow: 13px 21px 4px rgba(0, 0, 0, 0.75)
 
-@media screen and (max-wdith: $breakpoint-sm)
-.form
-	&__input, &__area
-		padding: 3vw 4vw
+@media screen and (max-width: $breakpoint-sm)
+	.form
+		&__input, &__area
+			padding: 3vw 4vw
