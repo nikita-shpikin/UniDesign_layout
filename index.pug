@@ -4,6 +4,7 @@ include ./components/designer/designer.pug
 include ./components/about/about.pug
 include ./components/project/project.pug
 include ./components/contact/contact.pug
+include ./components/footer/footer.pug
 
 block content 
 	
@@ -23,3 +24,5 @@ block content
 
 		- contactText = 'Lorem Ipsum is simply dummy text of the printing'
 		+contact('Contact Me', contactText)
+
+	+footer('UniDesign')

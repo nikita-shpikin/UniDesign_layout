@@ -1,0 +1,62 @@
+@media screen and (max-width: $breakpoint-xl)
+	.footer
+		&__contact
+			align-self: center
+
+		&__content
+			grid-template-columns: repeat(auto-fit, minmax(130px, 1fr))
+
+			&-block:last-child
+				grid-column-start: 1
+				grid-column-end: 4
+				grid-row-start: 1
+				grid-row-end: 2
+
+@media screen and (max-width: $breakpoint-lg)
+	.footer
+		&__container
+			padding: 100px 4% 50px 4%
+
+			grid-template-columns: 1fr
+			grid-template-areas: 'contact' 'content' 'social'
+
+		&__content
+			&-block:last-child
+				grid-column-start: 1
+				grid-column-end: 2
+				grid-row-start: 1
+				grid-row-end: 2
+
+		&__social
+			padding: 0
+
+@media screen and (max-width: $breakpoint-md)
+	.footer
+		&__contact-block
+			margin-top: 35px
+
+@media screen and (max-width: $breakpoint-sm)
+	.footer
+		&__container
+			padding: 50px 1% 25px 1%
+
+		&__contact-input
+			padding: 15px 48% 15px 15px
+
+		&__contact-button
+			right: 0
+			padding: 15px
+			width: 150px
+
+		&__social
+			justify-content: center
+
+		&__content
+			&-block:nth-child(1),	&-block:nth-child(2)
+				display: none
+
+			&-block:last-child
+				grid-column-start: 1
+				grid-column-end: 4
+				grid-row-start: 1
+				grid-row-end: 2

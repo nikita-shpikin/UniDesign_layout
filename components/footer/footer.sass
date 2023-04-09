@@ -1,0 +1,117 @@
+.footer-block
+	@include block(208px)
+
+.footer
+	background: $colorBackgroundProject
+
+	&__container
+		padding: 200px 50px 0 1%
+
+		display: grid
+		grid-template-columns: 1fr 3fr
+		grid-template-areas: 'contact content' 'social social'
+		gap: clamp(30px, 5vw, 110px)
+
+	&__contact
+		grid-area: contact
+
+		&-title
+			font-weight: 700
+			font-size: clamp(24px, 7vw, 48px) 
+			line-height: 72px
+			letter-spacing: 0.35em
+			color: $colorLogo
+
+		&-block
+			width: clamp(320px, 5vw, 340px)
+			margin-top: 75px
+			display: flex
+
+			position: relative
+
+		&-input, &-button
+			border-radius: 30px
+
+			font-family: 'Jost'
+			font-style: normal
+			font-weight: 700
+			font-size: clamp(16px, 3vw, 31px)
+			line-height: 45px
+			color: $colorHoverText
+
+		&-input
+			padding: 25px 40% 25px 30px
+			width: clamp(160px, 100%, 320px)
+			background: $colorText
+
+		&-button
+			cursor: pointer
+			position: absolute
+			right: -17%
+			background: $colorButtonFooter
+			padding: 25px 15px
+			width: clamp(90px, 60%, 180px)
+
+			text-align: center
+
+	&__content
+		display: grid
+		grid-template-columns: 1fr 1fr 275px
+		gap: clamp(30px, 6vw, 100px)
+
+		grid-area: content
+
+		font-size: clamp(16px, 3vw, 31px)
+		line-height: 45px
+		color: $colorText
+
+		&-heading, &__list-item
+				font-family: 'Jost', sans-serif
+				font-style: normal
+
+		&-heading
+			font-weight: 700
+
+	&__list
+		margin-top: clamp(15px, 3vw, 35px)
+
+		display: grid
+		grid-template-columns: 1fr
+		row-gap: clamp(15px, 3vw, 35px)
+
+		&-item
+			font-weight: 400
+
+	&__social
+		padding: 50px
+		grid-area: social
+
+		display: flex
+		justify-content: space-between
+		align-items: center
+		flex-wrap: wrap
+
+		&-text
+			text-align: center
+			font-family: 'Jost'
+			font-style: normal
+			font-weight: 400
+			font-size: clamp(16px, 3vw, 32px)
+			line-height: 46px
+			color: $colorText
+		
+		&-list
+			flex-basis: clamp(200px, 29vw, 400px)
+
+			display: flex
+			justify-content: space-between
+			align-items: center
+
+		&-item
+			transition-duration: .4s
+			transition-delay: .2s
+
+		&-item:hover
+			transform: scale(1.2 )translate(-10%, -10%)
+
+@import ./footer-media
