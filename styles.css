@@ -438,7 +438,7 @@ body * {
 }
 .about__container {
   padding: 206px 46px;
-  background: url("../../components/about/man.png") no-repeat right bottom/65%;
+  background: url("./components/about/man.png") no-repeat right bottom/65%;
   display: grid;
   grid-template-columns: 415px;
 }
@@ -561,7 +561,7 @@ body * {
   padding-left: 66px;
   display: grid;
   grid-template-columns: 50% 50%;
-  background: url("../../components/contact/programmer.png") no-repeat right center/55%;
+  background: url("./components/contact/programmer.png") no-repeat right center/55%;
 }
 
 @media screen and (max-width: 1200px) {
