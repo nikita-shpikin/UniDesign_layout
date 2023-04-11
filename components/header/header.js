@@ -13,8 +13,6 @@ export function headerMenu() {
 }
 
 export function smoothScroll(e) {
-	// передать секцию!
-
 	window.scroll({
 		left: 0,
 		top: e.offsetTop,

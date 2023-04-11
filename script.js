@@ -16,5 +16,7 @@ headerLinks.forEach(link => {
 				smoothScroll(section);
 			}
 		});
+
+		link.blur();
 	});
 });
