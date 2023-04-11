@@ -7,7 +7,10 @@ mixin header(title = 'UniDesign', arr = [1, 2, 3])
 				menu.header__menu 
 					each value in arr 
 						li.header__item
-							a.header__link(href="#") #{value} 
-			.header__burger 
-
-	script(src='../../components/header/header.js') 
+							if(value === 'About Me')
+								a.header__link(href=`#about`) #{value}
+							else if(value === 'Hire Me')
+								a.header__link(href=`#`) #{value}
+							else
+								a.header__link(href=`#${value}`) #{value} 
+			.header__burger
