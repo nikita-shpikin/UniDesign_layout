@@ -1,8 +1,16 @@
 import { headerMenu, smoothScroll } from './components/header/header.js';
 import { validation } from './components/footer/footer.js';
+import {
+	validationInput,
+	validationPassword,
+	validationTextArea,
+} from './components/contact/contacct.js';
 
 headerMenu();
 validation();
+validationInput();
+validationPassword();
+validationTextArea();
 
 const headerLinks = document.querySelectorAll('.header__link');
 
