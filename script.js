@@ -1,6 +1,8 @@
 import { headerMenu, smoothScroll } from './components/header/header.js';
+import { validation } from './components/footer/footer.js';
 
 headerMenu();
+validation();
 
 const headerLinks = document.querySelectorAll('.header__link');
 

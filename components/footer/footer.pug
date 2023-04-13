@@ -4,9 +4,9 @@ mixin footer(title)
 		.container.footer__container 
 			.footer__contact
 				h3.footer__contact-title #{title}
-				.footer__contact-block
+				form(action='#' method="post").footer__contact-block
 					input.footer__contact-input(type="text" placeholder='Email')
-					button.footer__contact-button Subscribe
+					button(type="submit").footer__contact-button Subscribe
 			
 			.footer__content
 				div.footer__content-block
