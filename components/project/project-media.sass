@@ -3,8 +3,23 @@
 		&__container
 			padding: 1vw
 
+@media screen and (max-width: $breakpoint-md)
+	.project
+		&__lightbox-image
+			height: 60vw
+
+		&__lightbox-left,&__lightbox-right
+			font-size: 30vw
+
+		&__lightbox-left
+			bottom: -31vw
+			left: 2vw
+
+		&__lightbox-right
+			top: -36vw
+			right: -75vw
+
 @media screen and (max-width: $breakpoint-sm)
 	@for $item from 1 through 9
 		.project__list-item:nth-child(odd)
 			display: none
-			

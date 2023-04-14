@@ -5,12 +5,14 @@ import {
 	validationPassword,
 	validationTextArea,
 } from './components/contact/contacct.js';
+import { lightbox } from './components/project/project.js';
 
 headerMenu();
 validation();
 validationInput();
 validationPassword();
 validationTextArea();
+lightbox();
 
 const headerLinks = document.querySelectorAll('.header__link');
 

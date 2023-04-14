@@ -2,7 +2,7 @@ mixin project(title, text, arr)
 	.project-block
 	
 	section.project#Projects
-		.container.project__container 
+		.container.project__container
 			h2.project__title #{title}
 			p.project__text #{text}
 			ul.project__list
@@ -15,3 +15,7 @@ mixin project(title, text, arr)
 								img.project__list-image(src="./components/project/girl.png", alt="girl") 							
 							if(item === 'black')
 								img.project__list-image(src="./components/project/black.png", alt="black")
+		.project__lightbox
+			<span class="project__lightbox-left">&#8249;</span>
+			img.project__lightbox-image(src="", alt="project")
+			<span class="project__lightbox-right">&#8250;</span>
