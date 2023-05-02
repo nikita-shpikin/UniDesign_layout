@@ -9,4 +9,6 @@ mixin designer(name = 'Steven', text)
 				.designer__buttons
 					button.designer__button Hire Me
 					button.designer__button My Project		
-			img.designer__photo(src="./components/designer/steven.jpg", alt=`photo ${name}`)
+			picture
+				source(srcset='./components/designer/steven.webp', type='image/webp')
+				img.designer__photo(src="./components/designer/steven.jpg", alt=`photo ${name}`)
