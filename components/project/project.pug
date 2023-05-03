@@ -10,11 +10,11 @@ mixin project(title, text, arr)
 					li.project__list-item 
 						a.project__list-link(href="#")
 							if(item === 'car')
-								img.project__list-image(src="./components/project/car.png", alt="car") 
+								img.project__list-image(src="./components/project/car.png", alt="car", loading="lazy") 
 							if(item === 'girl')
-								img.project__list-image(src="./components/project/girl.png", alt="girl") 							
+								img.project__list-image(src="./components/project/girl.png", alt="girl", loading="lazy") 							
 							if(item === 'black')
-								img.project__list-image(src="./components/project/black.png", alt="black")
+								img.project__list-image(src="./components/project/black.png", alt="black", loading="lazy")
 		.project__lightbox
 			<span class="project__lightbox-left">&#8249;</span>
 			img.project__lightbox-image(src="", alt="project")
