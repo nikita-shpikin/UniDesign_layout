@@ -45,9 +45,11 @@
 				&::after
 					transform: translateY(15px)	 rotate(45deg)
 					transition: 1.55s 0.2s
-			
-			&:hover::after
-				transform: translateY(20px) rotate(90deg)
+
+@media ( hover: hover )
+	.header__burger
+		&:hover::after
+			transform: translateY(20px) rotate(90deg)
 				
-			&:hover::before
-				transform: translateY(20px) 				
+		&:hover::before
+			transform: translateY(20px)
