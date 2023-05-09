@@ -1,8 +1,7 @@
-mixin header(title = 'UniDesign', arr = [1, 2, 3])
+mixin header(logo = 'UniDesign', arr = [1, 2, 3])
 	header.header 
 		.container.header__container 
-			a(href="#") 
-				h1.header__title #{title}
+			a.header__logo(href="#") #{logo}
 			nav.header__nav  
 				menu.header__menu 
 					each value in arr 
